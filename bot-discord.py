@@ -7,5 +7,5 @@ bot = commands.Bot(command_prefix='`')
 async def finger(ctx, arg):  # создаем асинхронную фунцию бота
     await ctx.send(arg)
 
-
-bot.run(str(os.environ.get('BOT_TOKEN')))
+token = os.environ.get('BOT_TOKEN')
+bot.run(str(token))
