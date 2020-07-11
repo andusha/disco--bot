@@ -8,4 +8,4 @@ async def finger(ctx, arg):  # создаем асинхронную фунци�
     await ctx.send(arg)
 
 
-bot.run(os.environ.get('BOT_TOKEN'))
+bot.run(str(os.environ.get('BOT_TOKEN')))
